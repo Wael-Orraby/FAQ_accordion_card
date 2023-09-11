@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: "Kumbh Sans", sans-serif;
+}
+.container {
+  background-color: white;
+  padding: 3rem 2rem;
+  width: 80vw;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  border-bottom: 1px #e8e8e8 solid;
+  padding-bottom: 1rem;
+}
+li div {
+  display: flex;
+  justify-content: space-between;
+}
+li div:hover {
+  cursor: pointer;
+  color: hsl(14, 88%, 65%);
+}
+li div img {
+  width: 1rem;
+}
+.answer {
+  margin-bottom: 0.5rem;
+  display: none;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.illustration {
+  position: relative;
+  display: grid;
+  place-content: center;
+  margin-bottom: 0.2rem;
+}
+
+.illustration .image {
+  display: inherit;
+  position: relative;
+}
+
+.illustration .image .bg {
+  display: inherit;
+}
+
+.illustration .image .woman {
+  display: inherit;
+  position: absolute;
+  width: 100%;
+  transform: translateY(-59%);
+}
+
+.illustration .box {
+  display: none;
+}
+
+.attribution {
+  font-size: 0.9rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  background-color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 940px) {
+  .container {
+    max-width: 900px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .faq-container {
+    width: 40%;
+  }
+  h1 {
+    text-align: left;
+  }
+  .illustration {
+    margin-bottom: 0;
+  }
+
+  .illustration .image {
+    position: absolute;
+  }
+
+  .illustration .image .bg {
+    position: absolute;
+    transform: translate(-67%, -37%);
+  }
+
+  .illustration .image .woman {
+    position: static;
+    transform: translateX(-34%);
+  }
+
+  .illustration .box {
+    display: inherit;
+    transform: translate(-111%, 25%);
+  }
+}
